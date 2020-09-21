@@ -10,4 +10,9 @@ function ziplist(one, two) {
   return newArray;
 }
 
+function zipListTheSimpleWay(one, two) {
+  return _.flatten(_.zip(one, two));
+}
+
 console.log(ziplist(dataOne, dataTwo));
+console.log(zipListTheSimpleWay(dataOne, dataTwo));
